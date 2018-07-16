@@ -1155,6 +1155,6 @@ footer div ul li a i:second-child {
 
 @media (max-height: 600px), (max-width: 440px) {
 	.row-about-counter {
-		padding-top: 384px;
+		padding-top: 184px;
 	}
 }

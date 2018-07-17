@@ -1255,13 +1255,12 @@ footer div ul li a i:second-child {
 		margin: 0;
 	}
 
-	.stages-circle-wish {
-		padding: 0;
-		margin: 0;
+	.col-stages-wish {
+		margin-left: 30px;
 	}
 
 	.col-stages-message {
-		margin-left: 60px;
+		margin-left: 70px;
 	}
 
 	.col-stages-meet {
@@ -1284,10 +1283,11 @@ footer div ul li a i:second-child {
 		align-items: center;
 	}
 
-	.col-stages-message {
-		padding-left: 74px;
-	}
 
+	.stages-circle-wish {
+		padding: 0;
+		margin: 0;
+	}
 	.stages-circle-message {
 		padding: 0;
 		margin: 0;

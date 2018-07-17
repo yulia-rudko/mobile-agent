@@ -1092,6 +1092,14 @@ footer div ul li a i:second-child {
 	color: #909b9e;
 }
 
+
+@media only screen and (max-width: 1680px) {
+
+	.stages:after {
+		left: 211px;
+	}
+}
+
 @media only screen and (max-width: 1611px) {
 
 	.header-picture {
@@ -1104,6 +1112,58 @@ footer div ul li a i:second-child {
 
 	.about h2 {
 		margin-left: -100px;
+	}
+}
+
+@media only screen and (max-width: 1545px) {
+
+	.stages-circle-wish {
+		margin-top: 35px;
+	}
+
+	.stages-circle-message {
+		margin-left: 121px;
+	}
+
+	.col-stages-message h3 {
+		margin-left: 68px;
+	}
+}
+
+@media only screen and (max-width: 1515px) {
+	.stages-circle-pay {
+		margin-top: 108px;
+	}
+
+	.stages-circle-message {
+		margin-top: 115px;
+	}
+}
+
+
+@media only screen and (max-width: 1436px) {
+
+	.stages:after {
+		left: 135px;
+		background-size: 84%;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	.stages:after {
+		left: 66px;
+	}
+}
+
+@media only screen and (max-width: 1292px) {
+
+	.stages-circle-wish {
+		margin-top: 0px;
+	}
+
+	.stages:after {
+		top: 232px;
+		background-size: 90%;
 	}
 }
 
@@ -1155,6 +1215,6 @@ footer div ul li a i:second-child {
 
 @media (max-height: 600px), (max-width: 440px) {
 	.row-about-counter {
-		padding-top: 184px;
+		padding-top: 384px;
 	}
 }

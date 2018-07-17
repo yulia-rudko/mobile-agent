@@ -587,6 +587,7 @@ figure button[name="play"]::after {
 	background-image: url(../images/beach.png);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 	width: 100%;
 	height: 529px;
 	object-fit: contain;
@@ -1199,13 +1200,114 @@ footer div ul li a i:second-child {
 	}
 }
 
-
-@media only screen and (max-width: 992px) {
-	.header-picture {
-		right: -360px;
+@media only screen and (min-width: 992px) {
+	.stages:after {
+		background-image: url(../images/sinus.png);
+		height: 181px;
+		width: 100%;
 	}
 }
 
+@media only screen and (max-width: 991px) {
+	.header-picture {
+		right: -360px;
+	}
+
+	.stages:before {
+		left: 0;
+		content: "";
+		background-image: url(../images/beach.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 0% 50%;
+		width: 100%;
+		height: 860px;
+		object-fit: contain;
+		z-index: -2;
+	}
+	.stages:after {
+		background-image: url(../images/sinus-vertical.png);
+		background-position: center;
+		height: 1000px;
+		width: 181px;
+		top: 27px;
+		left: 20px;
+		background-size: 566%;
+	}
+
+	.col-stages {
+		display: flex;
+		flex-direction: row;
+		padding: 0 0 40px 0;
+		margin: 0;
+	}
+
+	.stages-circle {
+		padding: 0;
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.stages-circle h3 {
+		padding: 0;
+		margin: 0;
+	}
+
+	.stages-circle-wish {
+		padding: 0;
+		margin: 0;
+	}
+
+	.col-stages-message {
+		margin-left: 60px;
+	}
+
+	.col-stages-meet {
+		margin-left: 40px;
+	}
+
+	.col-stages-pay {
+		margin-left: -28px;
+	}
+
+	.col-stages-wish h3,
+	.col-stages-message h3,
+	.col-stages-meet h3,
+	.col-stages-pay h3,
+	.col-stages-case h3 {
+		padding: 0 0 0 40px;
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.col-stages-message {
+		padding-left: 74px;
+	}
+
+	.stages-circle-message {
+		padding: 0;
+		margin: 0;
+	}
+	.stages-circle-meet {
+		padding: 0;
+		margin: 0;
+	}
+	.stages-circle-pay {
+		padding: 0;
+		margin: 0;
+	}
+
+	.stages-circle-case {
+		padding: 0;
+		margin: 0;
+	}
+
+
+}
 
 @media (max-height: 600px), (max-width: 480px) {
 	.credits {

@@ -79,6 +79,12 @@ body a {
 
 /*----header-start----*/
 
+header {
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 35px;
+}
+
 .header-logo img {
 	width: 150px;
 	padding-top: 50px;
@@ -148,14 +154,30 @@ body a {
 }
 
 .header-picture {
+	position: relative;
+	content: "";
+}
+
+.header-picture:after {
 	position: absolute;
-	top: -340px;
-	right: 47px;
+	content: "";
+	top: -557px;
+	right: 89px;
 	z-index: -1;
+	background-image: url(../images/top-img-opt.png);
+	background-repeat: no-repeat;
+	height: 943px;
+	width: 980px;
 }
 
 /*-----header-end----*/
 /*-----order-start---*/
+
+main {
+	overflow: hidden;
+	position: relative;
+}
+
 .order {
 	padding-bottom: 50px;
 }
@@ -219,13 +241,14 @@ body a {
 
 .rating:before {
 	position: absolute;
-	top: -48px;
+	top: -33px;
 	left: -343px;
 	content: "";
 	background-image: url(../images/q1.png);
 	background-repeat: no-repeat;
-	width: 800px;
-	height: 800px;
+	width: 700px;
+	height: 700px;
+	opacity: 0.5;
 }
 
 .rating h2 {
@@ -396,7 +419,7 @@ p {
 .advantage:after {
 	position: absolute;
 	top: -128px;
-	right: -448px;
+	right: -540px;
 	content: "";
 	background-image: url(../images/q1.png);
 	background-repeat: no-repeat;
@@ -505,7 +528,7 @@ p {
 	align-items: center;
 	padding-left: 68px;
 	padding-top: 163px;
-
+	padding-bottom: 400px;
 }
 
 .about-video figure {
@@ -540,10 +563,6 @@ figure button[name="play"]::after {
   border-style: solid;
   border-width: 8px 0 8px 15px;
   border-color: transparent transparent transparent #fb6a67;
-}
-
-.row-about-counter {
-	padding-top: 206px;
 }
 
 .about-counter {
@@ -601,9 +620,8 @@ figure button[name="play"]::after {
 	content: "";
 	background-image: url(../images/sinus.png);
 	background-repeat: no-repeat;
-	background-size: 72%;
   height: 181px;
-  width: 100%;
+  width: 1411px;
 	z-index: -1;
 }
 
@@ -1015,8 +1033,9 @@ figure button[name="play"]::after {
 
 footer {
 	text-align: center;
-	 color: #fff;
-	 position: relative;
+	color: #fff;
+	position: relative;
+	overflow: hidden;
 }
 
 footer::before {
@@ -1093,83 +1112,136 @@ footer div ul li a i:second-child {
 	color: #909b9e;
 }
 
+/*------@media---------------------------------------------------------------------*/
+
+@media only screen and (max-width: 1730px) {
+
+	.stages:after {
+		left: 191px;
+	}
+}
 
 @media only screen and (max-width: 1680px) {
 
+	.rating:before {
+		left: -420px;
+	}
+
+	.advantage:after {
+		right: -620px;
+	}
+}
+
+@media only screen and (max-width: 1646px) {
+
 	.stages:after {
-		left: 211px;
+		left: 134px;
 	}
 }
 
 @media only screen and (max-width: 1611px) {
 
-	.header-picture {
-		right: -172px;
+
+	.rating:before {
+		left: -493px;
 	}
 
-	.advantage:after {
-		display: none;
+	.header-picture:after {
+		right: -172px;
 	}
 
 	.about h2 {
 		margin-left: -100px;
 	}
+
+	footer::before {
+	}
 }
 
 @media only screen and (max-width: 1545px) {
 
-	.stages-circle-wish {
-		margin-top: 35px;
+	.rating:before {
+		left: -550px;
 	}
+}
 
-	.stages-circle-message {
-		margin-left: 121px;
-	}
+@media only screen and (max-width: 1527px) {
 
-	.col-stages-message h3 {
-		margin-left: 68px;
+	.stages:after {
+		left: 27px;
 	}
 }
 
 @media only screen and (max-width: 1515px) {
-	.stages-circle-pay {
-		margin-top: 108px;
-	}
 
-	.stages-circle-message {
-		margin-top: 115px;
+	.advantage:after {
+		right: -685px;
 	}
 }
 
-
 @media only screen and (max-width: 1436px) {
 
+	.advantage:after {
+		right: -717px;
+	}
+
 	.stages:after {
-		left: 135px;
-		background-size: 84%;
+		background-size: 95%;
+	}
+}
+
+@media only screen and (max-width: 1368px) {
+
+	.stages:after {
+		background-size: 90%;
 	}
 }
 
 @media only screen and (max-width: 1300px) {
+
 	.stages:after {
-		left: 66px;
+		background-size: 85%;
+	}
+}
+
+@media only screen and (max-width: 1230px) {
+
+	.stages:after {
+		background-size: 80%;
+	}
+
+	.stages-circle-pay {
+		margin-left: -56px;
+		margin-top: 109px;
+	}
+
+	.stages-circle-message {
+		margin-top: 109px;
+		margin-left: 79px;
+	}
+	.col-stages-message h3 {
+		margin-top: 20px;
+		margin-left: -12px;
+	}
+
+	.col-stages-pay h3 {
+		margin-left: -165px;
 	}
 }
 
 @media only screen and (max-width: 1292px) {
 
-	.stages-circle-wish {
-		margin-top: 0px;
+	.rating:before {
+		left: -590px;
 	}
 
-	.stages:after {
-		top: 232px;
-		background-size: 90%;
+	.advantage:after {
+		right: -754px;
 	}
 }
 
 @media only screen and (max-width: 1200px) {
-	.header-picture {
+	.header-picture:after {
 		right: -161px;
 	}
 
@@ -1177,7 +1249,7 @@ footer div ul li a i:second-child {
 		justify-content: flex-end;
 	}
 
-	.header-nav-below ul li{
+	.header-nav-below ul li {
 		padding-left: 50px;
 	}
 
@@ -1188,11 +1260,45 @@ footer div ul li a i:second-child {
 	.about h2 {
 		margin-left: 0;
 	}
+
+	footer::before {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 1192px) {
+
+	.stages:after {
+		background-size: 75%;
+	}
+
+	.order-video img {
+		margin-left: 197px;
+	}
+}
+
+@media only screen and (max-width: 1096px) {
+
+	.stages:after {
+		background-size: 70%;
+	}
+}
+
+@media only screen and (max-width: 1020px) {
+
+	.stages:after {
+		background-size: 67%;
+	}
 }
 
 @media only screen and (max-width: 1015px) {
-	.header-picture {
+
+	.header-picture:after {
 		right: -223px;
+	}
+
+	.advantage:after {
+		display: none;
 	}
 
 	.order-video {
@@ -1201,15 +1307,17 @@ footer div ul li a i:second-child {
 }
 
 @media only screen and (min-width: 992px) {
-	.stages:after {
-		background-image: url(../images/sinus.png);
-		height: 181px;
-		width: 100%;
-	}
+
+
 }
 
 @media only screen and (max-width: 991px) {
-	.header-picture {
+
+	.rating:before {
+		display: none;
+	}
+
+	.header-picture:after {
 		right: -360px;
 	}
 
@@ -1225,20 +1333,21 @@ footer div ul li a i:second-child {
 		object-fit: contain;
 		z-index: -2;
 	}
+
 	.stages:after {
 		background-image: url(../images/sinus-vertical.png);
 		background-position: center;
-		height: 1000px;
 		width: 181px;
-		top: 27px;
+		height: 860px;
+		top: 98px;
 		left: 20px;
-		background-size: 566%;
+		background-size: 78%;
 	}
 
 	.col-stages {
 		display: flex;
 		flex-direction: row;
-		padding: 0 0 40px 0;
+		padding: 0 0 35px 0;
 		margin: 0;
 	}
 
@@ -1250,25 +1359,20 @@ footer div ul li a i:second-child {
 		align-items: center;
 	}
 
-	.stages-circle h3 {
-		padding: 0;
-		margin: 0;
-	}
-
 	.col-stages-wish {
-		margin-left: 30px;
-	}
-
-	.col-stages-message {
-		margin-left: 70px;
-	}
-
-	.col-stages-meet {
 		margin-left: 40px;
 	}
 
+	.col-stages-message {
+		margin-left: 86px;
+	}
+
+	.col-stages-meet {
+		margin-left: 57px;
+	}
+
 	.col-stages-pay {
-		margin-left: -28px;
+		margin-left: -40px;
 	}
 
 	.col-stages-wish h3,
@@ -1282,31 +1386,55 @@ footer div ul li a i:second-child {
 		justify-content: center;
 		align-items: center;
 	}
+}
+
+@media only screen and (max-width: 881px) {
+
+	.stages {
+		padding-left: 40px;
+	}
+}
+
+@media only screen and (max-width: 840px) {
+
+	.stages {
+		padding-left: 72px;
+	}
+}
+
+@media only screen and (max-width: 810px) {
+
+	.stages {
+		padding-left: 100px;
+	}
+}
+
+@media only screen and (max-width: 791px) {
+	.header-picture:after {
+		right: -617px;
+		background-size: 57%;
+		top: -108px;
+	}
+
+	.header-nav-above a  {
+		color: #796f6f;
+	}
+
+	.header-nav-below ul li a {
+		color: #796f6f;
+	}
+}
 
 
-	.stages-circle-wish {
-		padding: 0;
-		margin: 0;
-	}
-	.stages-circle-message {
-		padding: 0;
-		margin: 0;
-	}
-	.stages-circle-meet {
-		padding: 0;
-		margin: 0;
-	}
-	.stages-circle-pay {
-		padding: 0;
-		margin: 0;
-	}
-
-	.stages-circle-case {
-		padding: 0;
-		margin: 0;
-	}
 
 
+@media only screen and (max-width: 507px) {
+	.col-stages h3 {
+		padding-left: 15px;
+	}
+	.col-stages{
+		padding-bottom: 30px;
+	}
 }
 
 @media (max-height: 600px), (max-width: 480px) {
